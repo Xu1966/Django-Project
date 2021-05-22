@@ -1,0 +1,28 @@
+#head {
+  color: white;
+  text-align: center;
+}
+
+img {
+  border-radius: 5px;
+  border-color: red;
+  border-style: solid;
+}
+li {
+  color: blue;
+}
+
+#logo {
+  height: 250px;
+}
+
+#enroll {
+  color: white;
+}
+
+.box {
+  width: 530px;
+  border-style: solid;
+}
+
+

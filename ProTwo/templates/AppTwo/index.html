@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% extends "AppTwo/base.html" %}
+{% block body_block %}
+{% load static %} 
+
+  <div class="main">
+    <h1 id="head">Get ready to join the national team.</h1><br><br>
+    <center><h3><a id="enroll" href="{% url 'AppTwo:users' %}">Enroll Today</a></h3> </center><br><br>
+    <center><img id="logo" src="{% static "images/Nepal_football_national_team_logo.png" %}" alt="Error!!Image not found">  </center>
+        <br>
+        <div class="text-white">
+          <center>Are you excited to join the national team?<br>Join Us Today.</center>
+        </div>
+  </div>
+
+  <footer class="page-footer font-small text-white">   
+   <div class=" text-center py-3 ">
+      For more details contact us at the-anfa.com     
+   </div>
+ 
+
+  {% endblock %}

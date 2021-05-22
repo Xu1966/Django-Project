@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">     </head>
+   
+    <body style="background-image: url({% static "images/chelsea.jpg" %})">
+    <div class = "mainbody">
+    <nav class="navbar navbar-expand-lg navbar-light bg-">
+      <a class="navbar-brand text-white" href="{% url 'index' %}">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapsetext-white" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white "></span>
+      </button>
+      <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{% url 'AppTwo:users' %}">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{% url 'AppTwo:user' %}">Display users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{% url 'admin:index' %}">Admin</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+   
+
+
+    <div class="container">
+
+      {% block body_block %}
+      <!-- Inherit outside this -->
+      {% endblock %}
+
+    </div>
+
+ 
+      
+    
+    </footer>
+  </div>
+  </body>
+
+</html>
